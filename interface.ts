@@ -146,4 +146,3 @@ interface interC extends A {
  }
  console.log(cDetails.name);
 
- 

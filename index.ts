@@ -14,7 +14,7 @@ let arr2:(number)[] = [1,2,3,4,5];
 console.log(arr2);
 
 //Object
-let obj:{ uname:string, age} = {uname : "dheema",age: 20};
+let obj:{ uname:string, age:number} = {uname : "dheema",age: 20};
 console.log(obj);
 console.log(obj.uname);
 
@@ -37,7 +37,12 @@ function diff(a:number,b:number):string{
 }
 console.log(diff(10,5)); 
 
-const mul = (a:number,b:number) =>{
+const mul = (a:number,b:number):number  =>{
     return a * b;
 }
 console.log(mul(4,5));
+
+//Symbol
+let id1 = Symbol("id");
+let id2 = Symbol("id");
+console.log(id1 === id2); 
