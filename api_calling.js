@@ -26,4 +26,23 @@ const getTodoList = async () => {
         console.log(item.title);
     });
 })();
+// singleTodo
+const getSingleTodo = async () => {
+    try {
+        const res = await fetch(singleTodoWithId_2);
+        const response = await res.json();
+        return response;
+    }
+    catch (err) {
+        console.log(err);
+    }
+};
+getSingleTodo();
+// (async()=>{
+//     const response = await getSingleTodo();
+//     console.log(response?.completed);
+// })();
+getSingleTodo().then((todo) => {
+    console.log(todo?.id);
+});
 //# sourceMappingURL=api_calling.js.map

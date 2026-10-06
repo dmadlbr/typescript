@@ -59,5 +59,5 @@ getSingleTodo();
 // })();
 
 getSingleTodo().then((todo) => {
-    console.log(todo);
+    console.log(todo?.id);
 });
